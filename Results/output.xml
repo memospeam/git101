@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20181105 13:32:55.990" generator="Robot 3.0.4 (Python 2.7.8 on win32)">
+<suite source="C:\Users\Admin-PC\PycharmProjects\Sub-Contract\Login_SubContract\Tests\Login_Sub-Contract.robot" id="s1" name="Login Sub-Contract">
+<test id="s1-t1" name="[1] Login Success">
+<kw type="setup" name="Login Mynetwork" library="Keyword_Login_Sub-Contract">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20181105 13:32:56.181" level="INFO">Opening browser 'Chrome' to base url 'https://10.137.16.95:9643'.</msg>
+<status status="PASS" endtime="20181105 13:33:02.482" starttime="20181105 13:32:56.181"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181105 13:33:03.612" starttime="20181105 13:33:02.482"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:03.612" starttime="20181105 13:32:56.181"></status>
+</kw>
+<kw name="กรอก Username , Password ถูก" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:33:04.612" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:33:04.612" starttime="20181105 13:33:03.612"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:04.613" starttime="20181105 13:33:03.612"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputUsername}</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:04.613" level="INFO">Typing text 'gtunyavatw' into text field 'id=input-username'.</msg>
+<status status="PASS" endtime="20181105 13:33:04.776" starttime="20181105 13:33:04.613"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputPassword}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:04.777" level="INFO">Typing text '1234' into text field 'id=input-password'.</msg>
+<status status="PASS" endtime="20181105 13:33:04.881" starttime="20181105 13:33:04.776"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonLogin}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:04.882" level="INFO">Clicking element 'id=btn-login'.</msg>
+<status status="PASS" endtime="20181105 13:33:04.978" starttime="20181105 13:33:04.881"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:04.978" starttime="20181105 13:33:03.612"></status>
+</kw>
+<kw name="กรอก OTP ถูก" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:33:05.991" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:33:05.991" starttime="20181105 13:33:04.980"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:05.991" starttime="20181105 13:33:04.980"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputOTP}</arg>
+<arg>${OTP}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:05.991" level="INFO">Typing text '1234' into text field 'id=input-otp'.</msg>
+<status status="PASS" endtime="20181105 13:33:06.081" starttime="20181105 13:33:05.991"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonOTPOk}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:06.082" level="INFO">Clicking element 'id=btn-otp-ok'.</msg>
+<status status="PASS" endtime="20181105 13:33:06.176" starttime="20181105 13:33:06.082"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:06.176" starttime="20181105 13:33:04.979"></status>
+</kw>
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:33:07.177" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:33:07.177" starttime="20181105 13:33:06.177"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:07.177" starttime="20181105 13:33:06.176"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>${Folderpic}${/}Login Success.png</arg>
+</arguments>
+<msg timestamp="20181105 13:33:07.502" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Picture/Login%20Success.png"&gt;&lt;img src="Picture/Login%20Success.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181105 13:33:07.502" starttime="20181105 13:33:07.178"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181105 13:33:09.622" starttime="20181105 13:33:07.502"></status>
+</kw>
+<doc>Login Success</doc>
+<tags>
+<tag>Standard Test</tag>
+</tags>
+<status status="PASS" endtime="20181105 13:33:09.622" critical="yes" starttime="20181105 13:32:56.181"></status>
+</test>
+<test id="s1-t2" name="[2] Login Error (Username)">
+<kw type="setup" name="Login Mynetwork" library="Keyword_Login_Sub-Contract">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:09.626" level="INFO">Opening browser 'Chrome' to base url 'https://10.137.16.95:9643'.</msg>
+<status status="PASS" endtime="20181105 13:33:15.695" starttime="20181105 13:33:09.625"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181105 13:33:16.845" starttime="20181105 13:33:15.695"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:16.845" starttime="20181105 13:33:09.625"></status>
+</kw>
+<kw name="กรอก Username ผิด" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:33:17.850" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:33:17.850" starttime="20181105 13:33:16.845"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputUsername}</arg>
+<arg>${WrongUsername}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:17.850" level="INFO">Typing text 'gtunaselect' into text field 'id=input-username'.</msg>
+<status status="PASS" endtime="20181105 13:33:17.980" starttime="20181105 13:33:17.850"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputPassword}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:17.981" level="INFO">Typing text '1234' into text field 'id=input-password'.</msg>
+<status status="PASS" endtime="20181105 13:33:18.085" starttime="20181105 13:33:17.981"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonLogin}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:18.086" level="INFO">Clicking element 'id=btn-login'.</msg>
+<status status="PASS" endtime="20181105 13:33:18.175" starttime="20181105 13:33:18.086"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${MessageErrorLogin}</arg>
+</arguments>
+<status status="PASS" endtime="20181105 13:33:18.435" starttime="20181105 13:33:18.176"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:18.435" starttime="20181105 13:33:16.845"></status>
+</kw>
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:33:19.436" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:33:19.436" starttime="20181105 13:33:18.436"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:19.436" starttime="20181105 13:33:18.436"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>${Folderpic}${/}Login Error (Username).png</arg>
+</arguments>
+<msg timestamp="20181105 13:33:19.925" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Picture/Login%20Error%20%28Username%29.png"&gt;&lt;img src="Picture/Login%20Error%20%28Username%29.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181105 13:33:19.925" starttime="20181105 13:33:19.437"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181105 13:33:22.031" starttime="20181105 13:33:19.926"></status>
+</kw>
+<doc>Login Error (Username)</doc>
+<tags>
+<tag>Negative Test</tag>
+</tags>
+<status status="PASS" endtime="20181105 13:33:22.031" critical="yes" starttime="20181105 13:33:09.624"></status>
+</test>
+<test id="s1-t3" name="[3] Login Error (OTP)">
+<kw type="setup" name="Login Mynetwork" library="Keyword_Login_Sub-Contract">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:22.035" level="INFO">Opening browser 'Chrome' to base url 'https://10.137.16.95:9643'.</msg>
+<status status="PASS" endtime="20181105 13:33:28.176" starttime="20181105 13:33:22.034"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181105 13:33:29.301" starttime="20181105 13:33:28.176"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:29.301" starttime="20181105 13:33:22.034"></status>
+</kw>
+<kw name="กรอก Username , Password ถูก" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:33:30.302" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:33:30.302" starttime="20181105 13:33:29.302"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:30.302" starttime="20181105 13:33:29.302"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputUsername}</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:30.303" level="INFO">Typing text 'gtunyavatw' into text field 'id=input-username'.</msg>
+<status status="PASS" endtime="20181105 13:33:30.428" starttime="20181105 13:33:30.302"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputPassword}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:30.429" level="INFO">Typing text '1234' into text field 'id=input-password'.</msg>
+<status status="PASS" endtime="20181105 13:33:30.538" starttime="20181105 13:33:30.428"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonLogin}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:30.539" level="INFO">Clicking element 'id=btn-login'.</msg>
+<status status="PASS" endtime="20181105 13:33:30.647" starttime="20181105 13:33:30.538"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:30.648" starttime="20181105 13:33:29.301"></status>
+</kw>
+<kw name="กรอก OTP ผิด" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:33:31.653" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:33:31.653" starttime="20181105 13:33:30.649"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:31.653" starttime="20181105 13:33:30.648"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputOTP}</arg>
+<arg>${WrongOTP}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:31.653" level="INFO">Typing text '0000' into text field 'id=input-otp'.</msg>
+<status status="PASS" endtime="20181105 13:33:31.746" starttime="20181105 13:33:31.653"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonOTPOk}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:31.747" level="INFO">Clicking element 'id=btn-otp-ok'.</msg>
+<status status="PASS" endtime="20181105 13:33:31.838" starttime="20181105 13:33:31.747"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${MessageErrorOtp}</arg>
+</arguments>
+<status status="PASS" endtime="20181105 13:33:32.087" starttime="20181105 13:33:31.838"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:32.087" starttime="20181105 13:33:30.648"></status>
+</kw>
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:33:33.100" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:33:33.100" starttime="20181105 13:33:32.087"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:33.100" starttime="20181105 13:33:32.087"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>${Folderpic}${/}Login Error (OTP).png</arg>
+</arguments>
+<msg timestamp="20181105 13:33:33.559" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Picture/Login%20Error%20%28OTP%29.png"&gt;&lt;img src="Picture/Login%20Error%20%28OTP%29.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181105 13:33:33.559" starttime="20181105 13:33:33.100"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181105 13:33:35.683" starttime="20181105 13:33:33.560"></status>
+</kw>
+<doc>Login Error (OTP)</doc>
+<tags>
+<tag>Negative Test</tag>
+</tags>
+<status status="PASS" endtime="20181105 13:33:35.683" critical="yes" starttime="20181105 13:33:22.033"></status>
+</test>
+<test id="s1-t4" name="[4] Go to Register PM Vendor">
+<kw type="setup" name="Login Mynetwork" library="Keyword_Login_Sub-Contract">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:35.688" level="INFO">Opening browser 'Chrome' to base url 'https://10.137.16.95:9643'.</msg>
+<status status="PASS" endtime="20181105 13:33:41.543" starttime="20181105 13:33:35.687"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181105 13:33:42.664" starttime="20181105 13:33:41.543"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:42.664" starttime="20181105 13:33:35.687"></status>
+</kw>
+<kw name="กรอก Username , Password ถูก" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:33:43.669" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:33:43.669" starttime="20181105 13:33:42.665"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:43.669" starttime="20181105 13:33:42.665"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputUsername}</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:43.669" level="INFO">Typing text 'gtunyavatw' into text field 'id=input-username'.</msg>
+<status status="PASS" endtime="20181105 13:33:43.789" starttime="20181105 13:33:43.669"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputPassword}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:43.790" level="INFO">Typing text '1234' into text field 'id=input-password'.</msg>
+<status status="PASS" endtime="20181105 13:33:43.898" starttime="20181105 13:33:43.790"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonLogin}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:43.899" level="INFO">Clicking element 'id=btn-login'.</msg>
+<status status="PASS" endtime="20181105 13:33:43.987" starttime="20181105 13:33:43.899"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:43.987" starttime="20181105 13:33:42.665"></status>
+</kw>
+<kw name="กรอก OTP ถูก" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:33:44.999" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:33:44.999" starttime="20181105 13:33:43.989"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:44.999" starttime="20181105 13:33:43.989"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputOTP}</arg>
+<arg>${OTP}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:44.999" level="INFO">Typing text '1234' into text field 'id=input-otp'.</msg>
+<status status="PASS" endtime="20181105 13:33:45.118" starttime="20181105 13:33:44.999"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonOTPOk}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:45.118" level="INFO">Clicking element 'id=btn-otp-ok'.</msg>
+<status status="PASS" endtime="20181105 13:33:45.221" starttime="20181105 13:33:45.118"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:45.221" starttime="20181105 13:33:43.988"></status>
+</kw>
+<kw name="เข้าหน้าจอ Register PM Vendor" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:33:46.231" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:33:46.231" starttime="20181105 13:33:45.223"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:46.231" starttime="20181105 13:33:45.222"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonSlide}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:46.231" level="INFO">Clicking element 'xpath=//*[@id="btn-toggle-side-menu"]'.</msg>
+<status status="PASS" endtime="20181105 13:33:46.320" starttime="20181105 13:33:46.231"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SlideMenuSubContract}</arg>
+</arguments>
+<status status="PASS" endtime="20181105 13:33:46.584" starttime="20181105 13:33:46.320"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${SlideMenuSubContract}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:46.585" level="INFO">Clicking link 'xpath=//*[@id="menu-238"]'.</msg>
+<status status="PASS" endtime="20181105 13:33:46.667" starttime="20181105 13:33:46.584"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SlideMenuSub-RegisterPM}</arg>
+</arguments>
+<status status="PASS" endtime="20181105 13:33:46.703" starttime="20181105 13:33:46.667"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${SlideMenuSub-RegisterPM}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:46.705" level="INFO">Clicking link 'xpath=//*[@id="menu-239"]'.</msg>
+<status status="PASS" endtime="20181105 13:33:46.810" starttime="20181105 13:33:46.704"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:46.810" starttime="20181105 13:33:45.222"></status>
+</kw>
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:33:47.812" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:33:47.812" starttime="20181105 13:33:46.811"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:47.812" starttime="20181105 13:33:46.811"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>${Folderpic}${/}Register PM Vendor.png</arg>
+</arguments>
+<msg timestamp="20181105 13:33:48.133" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Picture/Register%20PM%20Vendor.png"&gt;&lt;img src="Picture/Register%20PM%20Vendor.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181105 13:33:48.133" starttime="20181105 13:33:47.813"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181105 13:33:50.240" starttime="20181105 13:33:48.133"></status>
+</kw>
+<doc>can Go to Register PM Vendor</doc>
+<tags>
+<tag>Standard Test</tag>
+</tags>
+<status status="PASS" endtime="20181105 13:33:50.240" critical="yes" starttime="20181105 13:33:35.685"></status>
+</test>
+<test id="s1-t5" name="[5] Go to Sub-User Management">
+<kw type="setup" name="Login Mynetwork" library="Keyword_Login_Sub-Contract">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:50.240" level="INFO">Opening browser 'Chrome' to base url 'https://10.137.16.95:9643'.</msg>
+<status status="PASS" endtime="20181105 13:33:56.205" starttime="20181105 13:33:50.240"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181105 13:33:57.329" starttime="20181105 13:33:56.205"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:57.329" starttime="20181105 13:33:50.240"></status>
+</kw>
+<kw name="กรอก Username , Password ถูก" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:33:58.330" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:33:58.330" starttime="20181105 13:33:57.330"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:58.330" starttime="20181105 13:33:57.330"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputUsername}</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:58.331" level="INFO">Typing text 'gtunyavatw' into text field 'id=input-username'.</msg>
+<status status="PASS" endtime="20181105 13:33:58.454" starttime="20181105 13:33:58.330"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputPassword}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:58.454" level="INFO">Typing text '1234' into text field 'id=input-password'.</msg>
+<status status="PASS" endtime="20181105 13:33:58.576" starttime="20181105 13:33:58.454"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonLogin}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:58.576" level="INFO">Clicking element 'id=btn-login'.</msg>
+<status status="PASS" endtime="20181105 13:33:58.692" starttime="20181105 13:33:58.576"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:58.692" starttime="20181105 13:33:57.329"></status>
+</kw>
+<kw name="กรอก OTP ถูก" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:33:59.694" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:33:59.694" starttime="20181105 13:33:58.693"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:59.694" starttime="20181105 13:33:58.693"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputOTP}</arg>
+<arg>${OTP}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:59.695" level="INFO">Typing text '1234' into text field 'id=input-otp'.</msg>
+<status status="PASS" endtime="20181105 13:33:59.792" starttime="20181105 13:33:59.694"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonOTPOk}</arg>
+</arguments>
+<msg timestamp="20181105 13:33:59.792" level="INFO">Clicking element 'id=btn-otp-ok'.</msg>
+<status status="PASS" endtime="20181105 13:33:59.889" starttime="20181105 13:33:59.792"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:33:59.890" starttime="20181105 13:33:58.692"></status>
+</kw>
+<kw name="เข้าหน้าจอ Sub-User Management" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:34:00.900" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:34:00.900" starttime="20181105 13:33:59.891"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:00.900" starttime="20181105 13:33:59.891"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonSlide}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:00.901" level="INFO">Clicking element 'xpath=//*[@id="btn-toggle-side-menu"]'.</msg>
+<status status="PASS" endtime="20181105 13:34:00.990" starttime="20181105 13:34:00.901"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SlideMenuSubContract}</arg>
+</arguments>
+<status status="PASS" endtime="20181105 13:34:01.263" starttime="20181105 13:34:00.991"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${SlideMenuSubContract}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:01.264" level="INFO">Clicking link 'xpath=//*[@id="menu-238"]'.</msg>
+<status status="PASS" endtime="20181105 13:34:01.367" starttime="20181105 13:34:01.264"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SlideMenuSub-Sub-User}</arg>
+</arguments>
+<status status="PASS" endtime="20181105 13:34:01.642" starttime="20181105 13:34:01.367"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${SlideMenuSub-Sub-User}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:01.642" level="INFO">Clicking link 'xpath=//*[@id="menu-254"]'.</msg>
+<status status="PASS" endtime="20181105 13:34:01.745" starttime="20181105 13:34:01.642"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:01.745" starttime="20181105 13:33:59.890"></status>
+</kw>
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:34:02.746" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:34:02.746" starttime="20181105 13:34:01.746"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:02.746" starttime="20181105 13:34:01.745"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>${Folderpic}${/}Sub-User Management.png</arg>
+</arguments>
+<msg timestamp="20181105 13:34:03.111" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Picture/Sub-User%20Management.png"&gt;&lt;img src="Picture/Sub-User%20Management.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181105 13:34:03.111" starttime="20181105 13:34:02.746"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181105 13:34:05.223" starttime="20181105 13:34:03.112"></status>
+</kw>
+<doc>can Go to Sub-User Management</doc>
+<tags>
+<tag>Standard Test</tag>
+</tags>
+<status status="PASS" endtime="20181105 13:34:05.223" critical="yes" starttime="20181105 13:33:50.240"></status>
+</test>
+<test id="s1-t6" name="[6] Go to Sub-Company Management">
+<kw type="setup" name="Login Mynetwork" library="Keyword_Login_Sub-Contract">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:05.226" level="INFO">Opening browser 'Chrome' to base url 'https://10.137.16.95:9643'.</msg>
+<status status="PASS" endtime="20181105 13:34:11.034" starttime="20181105 13:34:05.226"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181105 13:34:12.164" starttime="20181105 13:34:11.035"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:12.164" starttime="20181105 13:34:05.225"></status>
+</kw>
+<kw name="กรอก Username , Password ถูก" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:34:13.175" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:34:13.175" starttime="20181105 13:34:12.164"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:13.175" starttime="20181105 13:34:12.164"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputUsername}</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:13.175" level="INFO">Typing text 'gtunyavatw' into text field 'id=input-username'.</msg>
+<status status="PASS" endtime="20181105 13:34:13.314" starttime="20181105 13:34:13.175"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputPassword}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:13.315" level="INFO">Typing text '1234' into text field 'id=input-password'.</msg>
+<status status="PASS" endtime="20181105 13:34:13.414" starttime="20181105 13:34:13.314"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonLogin}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:13.415" level="INFO">Clicking element 'id=btn-login'.</msg>
+<status status="PASS" endtime="20181105 13:34:13.518" starttime="20181105 13:34:13.415"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:13.518" starttime="20181105 13:34:12.164"></status>
+</kw>
+<kw name="กรอก OTP ถูก" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:34:14.520" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:34:14.520" starttime="20181105 13:34:13.520"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:14.520" starttime="20181105 13:34:13.520"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputOTP}</arg>
+<arg>${OTP}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:14.521" level="INFO">Typing text '1234' into text field 'id=input-otp'.</msg>
+<status status="PASS" endtime="20181105 13:34:14.621" starttime="20181105 13:34:14.520"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonOTPOk}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:14.621" level="INFO">Clicking element 'id=btn-otp-ok'.</msg>
+<status status="PASS" endtime="20181105 13:34:14.713" starttime="20181105 13:34:14.621"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:14.713" starttime="20181105 13:34:13.519"></status>
+</kw>
+<kw name="เข้าหน้าจอ Sub-Company Management" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:34:15.717" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:34:15.717" starttime="20181105 13:34:14.714"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:15.717" starttime="20181105 13:34:14.714"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonSlide}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:15.717" level="INFO">Clicking element 'xpath=//*[@id="btn-toggle-side-menu"]'.</msg>
+<status status="PASS" endtime="20181105 13:34:15.797" starttime="20181105 13:34:15.717"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SlideMenuSubContract}</arg>
+</arguments>
+<status status="PASS" endtime="20181105 13:34:16.064" starttime="20181105 13:34:15.797"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${SlideMenuSubContract}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:16.065" level="INFO">Clicking link 'xpath=//*[@id="menu-238"]'.</msg>
+<status status="PASS" endtime="20181105 13:34:16.162" starttime="20181105 13:34:16.065"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SlideMenuSub-Sub-Company}</arg>
+</arguments>
+<status status="PASS" endtime="20181105 13:34:16.429" starttime="20181105 13:34:16.163"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${SlideMenuSub-Sub-Company}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:16.429" level="INFO">Clicking link 'xpath=//*[@id="menu-255"]'.</msg>
+<status status="PASS" endtime="20181105 13:34:16.515" starttime="20181105 13:34:16.429"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:16.516" starttime="20181105 13:34:14.713"></status>
+</kw>
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:34:17.517" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:34:17.517" starttime="20181105 13:34:16.516"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:17.518" starttime="20181105 13:34:16.516"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>${Folderpic}${/}Sub-Company Management.png</arg>
+</arguments>
+<msg timestamp="20181105 13:34:17.866" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Picture/Sub-Company%20Management.png"&gt;&lt;img src="Picture/Sub-Company%20Management.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181105 13:34:17.866" starttime="20181105 13:34:17.518"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181105 13:34:19.959" starttime="20181105 13:34:17.867"></status>
+</kw>
+<doc>can Go to Sub-Company Management</doc>
+<tags>
+<tag>Standard Test</tag>
+</tags>
+<status status="PASS" endtime="20181105 13:34:19.959" critical="yes" starttime="20181105 13:34:05.224"></status>
+</test>
+<test id="s1-t7" name="[7] Go to Sub-Project Management">
+<kw type="setup" name="Login Mynetwork" library="Keyword_Login_Sub-Contract">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:19.962" level="INFO">Opening browser 'Chrome' to base url 'https://10.137.16.95:9643'.</msg>
+<status status="PASS" endtime="20181105 13:34:25.715" starttime="20181105 13:34:19.962"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181105 13:34:26.843" starttime="20181105 13:34:25.716"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:26.843" starttime="20181105 13:34:19.962"></status>
+</kw>
+<kw name="กรอก Username , Password ถูก" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:34:27.844" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:34:27.844" starttime="20181105 13:34:26.844"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:27.844" starttime="20181105 13:34:26.844"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputUsername}</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:27.845" level="INFO">Typing text 'gtunyavatw' into text field 'id=input-username'.</msg>
+<status status="PASS" endtime="20181105 13:34:27.987" starttime="20181105 13:34:27.844"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputPassword}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:27.988" level="INFO">Typing text '1234' into text field 'id=input-password'.</msg>
+<status status="PASS" endtime="20181105 13:34:28.101" starttime="20181105 13:34:27.987"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonLogin}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:28.102" level="INFO">Clicking element 'id=btn-login'.</msg>
+<status status="PASS" endtime="20181105 13:34:28.197" starttime="20181105 13:34:28.101"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:28.197" starttime="20181105 13:34:26.843"></status>
+</kw>
+<kw name="กรอก OTP ถูก" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:34:29.200" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:34:29.200" starttime="20181105 13:34:28.199"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:29.200" starttime="20181105 13:34:28.198"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputOTP}</arg>
+<arg>${OTP}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:29.201" level="INFO">Typing text '1234' into text field 'id=input-otp'.</msg>
+<status status="PASS" endtime="20181105 13:34:29.312" starttime="20181105 13:34:29.201"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonOTPOk}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:29.312" level="INFO">Clicking element 'id=btn-otp-ok'.</msg>
+<status status="PASS" endtime="20181105 13:34:29.412" starttime="20181105 13:34:29.312"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:29.412" starttime="20181105 13:34:28.198"></status>
+</kw>
+<kw name="เข้าหน้าจอ Sub-Project Management" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:34:30.414" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:34:30.414" starttime="20181105 13:34:29.414"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:30.414" starttime="20181105 13:34:29.413"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonSlide}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:30.415" level="INFO">Clicking element 'xpath=//*[@id="btn-toggle-side-menu"]'.</msg>
+<status status="PASS" endtime="20181105 13:34:30.489" starttime="20181105 13:34:30.415"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SlideMenuSubContract}</arg>
+</arguments>
+<status status="PASS" endtime="20181105 13:34:30.744" starttime="20181105 13:34:30.489"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${SlideMenuSubContract}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:30.745" level="INFO">Clicking link 'xpath=//*[@id="menu-238"]'.</msg>
+<status status="PASS" endtime="20181105 13:34:30.840" starttime="20181105 13:34:30.744"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SlideMenuSub-Sub-Project}</arg>
+</arguments>
+<status status="PASS" endtime="20181105 13:34:31.096" starttime="20181105 13:34:30.840"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${SlideMenuSub-Sub-Project}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:31.097" level="INFO">Clicking link 'xpath=//*[@id="menu-275"]'.</msg>
+<status status="PASS" endtime="20181105 13:34:31.199" starttime="20181105 13:34:31.096"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:31.199" starttime="20181105 13:34:29.413"></status>
+</kw>
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:34:32.201" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:34:32.201" starttime="20181105 13:34:31.200"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:32.201" starttime="20181105 13:34:31.200"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>${Folderpic}${/}Sub-Project Management.png</arg>
+</arguments>
+<msg timestamp="20181105 13:34:32.553" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Picture/Sub-Project%20Management.png"&gt;&lt;img src="Picture/Sub-Project%20Management.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181105 13:34:32.553" starttime="20181105 13:34:32.202"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181105 13:34:34.675" starttime="20181105 13:34:32.553"></status>
+</kw>
+<doc>can Go to Sub-Project Management</doc>
+<tags>
+<tag>Standard Test</tag>
+</tags>
+<status status="PASS" endtime="20181105 13:34:34.675" critical="yes" starttime="20181105 13:34:19.961"></status>
+</test>
+<test id="s1-t8" name="[8] Go to Verify-Rollout-Plan">
+<kw type="setup" name="Login Mynetwork" library="Keyword_Login_Sub-Contract">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:34.675" level="INFO">Opening browser 'Chrome' to base url 'https://10.137.16.95:9643'.</msg>
+<status status="PASS" endtime="20181105 13:34:40.565" starttime="20181105 13:34:34.675"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181105 13:34:41.680" starttime="20181105 13:34:40.565"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:41.680" starttime="20181105 13:34:34.675"></status>
+</kw>
+<kw name="กรอก Username , Password ถูก" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:34:42.686" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:34:42.686" starttime="20181105 13:34:41.681"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:42.686" starttime="20181105 13:34:41.681"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputUsername}</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:42.686" level="INFO">Typing text 'gtunyavatw' into text field 'id=input-username'.</msg>
+<status status="PASS" endtime="20181105 13:34:42.807" starttime="20181105 13:34:42.686"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputPassword}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:42.808" level="INFO">Typing text '1234' into text field 'id=input-password'.</msg>
+<status status="PASS" endtime="20181105 13:34:42.913" starttime="20181105 13:34:42.808"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonLogin}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:42.914" level="INFO">Clicking element 'id=btn-login'.</msg>
+<status status="PASS" endtime="20181105 13:34:43.013" starttime="20181105 13:34:42.914"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:43.013" starttime="20181105 13:34:41.680"></status>
+</kw>
+<kw name="กรอก OTP ถูก" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:34:44.028" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:34:44.028" starttime="20181105 13:34:43.014"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:44.028" starttime="20181105 13:34:43.014"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputOTP}</arg>
+<arg>${OTP}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:44.028" level="INFO">Typing text '1234' into text field 'id=input-otp'.</msg>
+<status status="PASS" endtime="20181105 13:34:44.124" starttime="20181105 13:34:44.028"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonOTPOk}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:44.124" level="INFO">Clicking element 'id=btn-otp-ok'.</msg>
+<status status="PASS" endtime="20181105 13:34:44.208" starttime="20181105 13:34:44.124"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:44.209" starttime="20181105 13:34:43.013"></status>
+</kw>
+<kw name="เข้าหน้าจอ Verify-Rollout-Plan" library="Keyword_Login_Sub-Contract">
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:34:45.222" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:34:45.222" starttime="20181105 13:34:44.210"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:45.222" starttime="20181105 13:34:44.209"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ButtonSlide}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:45.222" level="INFO">Clicking element 'xpath=//*[@id="btn-toggle-side-menu"]'.</msg>
+<status status="PASS" endtime="20181105 13:34:45.302" starttime="20181105 13:34:45.222"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SlideMenuSubContract}</arg>
+</arguments>
+<status status="PASS" endtime="20181105 13:34:45.579" starttime="20181105 13:34:45.303"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${SlideMenuSubContract}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:45.580" level="INFO">Clicking link 'xpath=//*[@id="menu-238"]'.</msg>
+<status status="PASS" endtime="20181105 13:34:45.671" starttime="20181105 13:34:45.579"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SlideMenuSub-Verify-Rollout}</arg>
+</arguments>
+<status status="PASS" endtime="20181105 13:34:46.157" starttime="20181105 13:34:45.672"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${SlideMenuSub-Verify-Rollout}</arg>
+</arguments>
+<msg timestamp="20181105 13:34:46.157" level="INFO">Clicking link 'xpath=//*[@id="menu-280"]'.</msg>
+<status status="PASS" endtime="20181105 13:34:46.228" starttime="20181105 13:34:46.157"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:46.229" starttime="20181105 13:34:44.209"></status>
+</kw>
+<kw name="Wait Process" library="Keyword_Login_Sub-Contract">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181105 13:34:47.235" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181105 13:34:47.235" starttime="20181105 13:34:46.229"></status>
+</kw>
+<status status="PASS" endtime="20181105 13:34:47.235" starttime="20181105 13:34:46.229"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>${Folderpic}${/}Verify-Rollout-Plan.png</arg>
+</arguments>
+<msg timestamp="20181105 13:34:47.565" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Picture/Verify-Rollout-Plan.png"&gt;&lt;img src="Picture/Verify-Rollout-Plan.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181105 13:34:47.565" starttime="20181105 13:34:47.236"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181105 13:34:49.690" starttime="20181105 13:34:47.565"></status>
+</kw>
+<doc>can Go to Verify-Rollout-Plan</doc>
+<tags>
+<tag>Standard Test</tag>
+</tags>
+<status status="PASS" endtime="20181105 13:34:49.690" critical="yes" starttime="20181105 13:34:34.675"></status>
+</test>
+<status status="PASS" endtime="20181105 13:34:49.690" starttime="20181105 13:32:55.990"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="8">Critical Tests</stat>
+<stat fail="0" pass="8">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="2">Negative Test</stat>
+<stat fail="0" pass="6">Standard Test</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Login Sub-Contract" pass="8">Login Sub-Contract</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
